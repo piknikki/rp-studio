@@ -6,19 +6,31 @@
       <router-link class="nav-item nav-dots" to="/about">About</router-link>
       <router-link class="nav-item nav-dots" to="/contact">Contact</router-link>
     </nav>
-    <h1>logo goes here</h1>
     <router-view/>
+    <h1>logo goes here</h1>
     <Home />
+    <About />
+    <Work />
+    <Contact />
+    <Footer />
   </div>
 </template>
 
 <script>
 import Home from '@/components/Home'
+import About from '@/components/About'
+import Work from '@/components/Work'
+import Contact from '@/components/Contact'
+import Footer from '@/components/Footer'
 
 export default {
   name: 'App',
   components: {
-    Home
+    Home,
+    About,
+    Work,
+    Contact,
+    Footer
   }
 }
 </script>
@@ -29,7 +41,12 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: white;
   margin-top: 60px;
+}
+
+body {
+  background: url("./assets/rainbowdiagonal.jpg") no-repeat center fixed;
+  background-size: cover;
 }
 </style>

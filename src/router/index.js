@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '@/components/Home'
+import Work from '@/components/Work'
+import About from '@/components/About'
 
 Vue.use(VueRouter)
 
@@ -21,7 +23,7 @@ const routes = [
     component: About
   },
   {
-    path: "*",
+    path: '*',
     component: () => import('../views/NotFound.vue')
   }
 ]

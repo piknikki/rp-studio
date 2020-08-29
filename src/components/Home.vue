@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>home component is right here</h2>
+    <h2>Welcome to Red Panda Studio. I am Vera Petersen and this is my work.</h2>
   </div>
 </template>
 

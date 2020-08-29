@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h3>Contact is here</h3>
+    <h3> <i class="fal fa-cat-space fa-2x"></i> Contact me</h3>
   </div>
 </template>
 
