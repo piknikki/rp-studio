@@ -33,7 +33,7 @@ export default {
   justify-content: center;
 }
 #form {
-  width: 300px;
+  width: 400px;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
