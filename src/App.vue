@@ -61,15 +61,6 @@ body {
 #nav {
   padding: 30px;
   cursor: pointer;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
 }
 
 .navbar {
@@ -81,25 +72,29 @@ body {
 }
 
 .nav-item {
-  padding: 10px;
+  padding: 2px 10px;
 }
 
 .nav-dots {
-  color: lightpink;
+  color: deeppink;
+  text-decoration: none;
   font-size: 1.5em;
   letter-spacing: 1px;
   vertical-align: center;
-  margin-left: 1px;
-  margin-right: 6px;
+  //margin-left: 1px;
+  //margin-right: 6px;
   border-radius: 20px;
+  border-bottom: lightpink solid 2px;
+  margin: 0 10px;
 }
 
 .nav-dots:hover {
-  border-left: 1px dotted deeppink;
-  border-right: 1px dotted deeppink;
-  margin-left: 0;
-  margin-right: 5px;
-  color: deeppink;
+  //border-left: 1px dotted deeppink;
+  //border-right: 1px dotted deeppink;
+  //margin-left: 0;
+  //margin-right: 5px;
+  //color: deeppink;
+  background-color: lightpink;
   border-radius: 20px;
   text-decoration: none;
 }
