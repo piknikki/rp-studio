@@ -13,6 +13,7 @@
         <p>
           <label>Message: <textarea name="message"></textarea></label>
         </p>
+        <br>
         <p>
           <button type="submit">Send</button>
         </p>

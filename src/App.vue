@@ -8,7 +8,7 @@
       </div>
 
       <div class="navbar-menu">
-        <div class="navbar-end is-active">
+        <div class="navbar-end">
           <router-link class="nav-item nav-dots" to="/">Home</router-link>
           <router-link class="nav-item nav-dots" to="/work">Work</router-link>
           <router-link class="nav-item nav-dots" to="/about">About</router-link>
@@ -17,33 +17,22 @@
       </div>
     </nav>
     <router-view/>
-    <About />
-    <Work />
-    <Contact />
-    <Footer />
   </div>
 </template>
 
 <script>
 // import Home from '@/components/Home'
-import About from '@/components/About'
-import Work from '@/components/Work'
-import Contact from '@/components/Contact'
-import Footer from '@/components/Footer'
 
 export default {
-  name: 'App',
-  components: {
-    // Home,
-    About,
-    Work,
-    Contact,
-    Footer
-  }
+  name: 'App'
 }
 </script>
 
 <style lang="scss">
+* {
+  box-sizing: border-box;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -51,6 +40,9 @@ export default {
   text-align: center;
   color: white;
   margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
 }
 
 body {
@@ -66,19 +58,31 @@ body {
 .navbar {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  flex-wrap: wrap;
   font-size: 1.5em;
-  padding: 10px 100px;
+  padding: 20px;
 }
 
-.nav-item {
+.navbar-brand {
+  justify-content: flex-start;
+}
+
+.navbar-menu {
+  display: flex;
+}
+
+.navbar-end {
+  justify-content: flex-end;
+}
+
+.navbar a {
   padding: 2px 10px;
 }
 
 .nav-dots {
   color: deeppink;
   text-decoration: none;
-  font-size: 1.5em;
+  font-size: 1em;
   letter-spacing: 1px;
   vertical-align: center;
   //margin-left: 1px;
